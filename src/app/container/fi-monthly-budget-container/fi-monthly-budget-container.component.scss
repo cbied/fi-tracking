@@ -1,3 +1,58 @@
-mat-grid-tile {
+.container {
+  width: 100%;
+  height: 200%;
   background: lightblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__left-container,
+  &__right-container {
+    width: 45%;
+    height: 200vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__start-end-balance {
+    width: 90%;
+    height: 60vh;
+    background: green;
+
+  }
+
+  &__expenses-bars {
+    width: 90%;
+    height: 20vh;
+    background: lightblue;
+  }
+
+  &__expenses-display {
+    width: 90%;
+    height: 120vh;
+    background: red;
+  }
+
+  &__month-change {
+    width: 90%;
+    height: 60vh;
+    background: green;
+
+  }
+
+  &__income-bars {
+    width: 90%;
+    height: 20vh;
+    background: lightblue;
+  }
+
+  &__income-display {
+    width: 90%;
+    height: 120vh;
+    background: red;
+  }
+
 }

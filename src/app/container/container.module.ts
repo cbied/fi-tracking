@@ -4,6 +4,7 @@ import { FiAnnualActualBudgetContainerComponent } from './fi-annual-actual-budge
 import { FiMonthlyBudgetContainerComponent } from './fi-monthly-budget-container/fi-monthly-budget-container.component';
 import { FiTransactionContainerComponent } from './fi-transaction-container/fi-transaction-container.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { UiModule } from '../ui/ui.module';
 
 
 @NgModule({
@@ -13,7 +14,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     FiMonthlyBudgetContainerComponent,
     FiTransactionContainerComponent
   ],
-  imports: [MatGridListModule],
+  imports: [MatGridListModule, UiModule],
   providers: [],
   bootstrap: [],
   exports: [
