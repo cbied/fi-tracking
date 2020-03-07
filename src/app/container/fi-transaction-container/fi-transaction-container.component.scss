@@ -1,3 +1,30 @@
-mat-grid-tile {
+.transaction-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
   background: lightblue;
+
+  &__left {
+    width: 45%;
+    height: 90%;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background: white;
+  }
+
+  &__right {
+    width: 45%;
+    height: 90%;
+    margin: 2rem;
+    background: white
+  }
+
+  &__input {
+    width: 90%;
+    height: 60%;
+    margin-top: 3rem;
+    background: lightblue
+  }
 }

@@ -1,12 +1,36 @@
 import { InputTableComponent } from './input-table/input-table.component';
 import { NgModule } from '@angular/core';
-import { MatTableModule } from '@angular/material/table';
+import { MonthlyTransactionInputComponent } from './monthly-transaction-input/monthly-transaction-input.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule, MatSelectModule } from '@angular/material';
+import { MonthlyTransactionExpenseComponent } from './monthly-transaction-expense/monthly-transaction-expense.component';
+import { MonthlyTransactionIncomeComponent } from './monthly-transaction-income/monthly-transaction-income.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { TextFieldModule } from '@angular/cdk/text-field';
 
 @NgModule({
-  declarations: [InputTableComponent],
-  imports: [MatTableModule],
+  declarations: [
+    InputTableComponent,
+    MonthlyTransactionInputComponent,
+    MonthlyTransactionExpenseComponent,
+    MonthlyTransactionIncomeComponent
+  ],
+  imports: [
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatInputModule,
+    MatTabsModule,
+    TextFieldModule,
+    MatSelectModule
+  ],
   providers: [],
   bootstrap: [],
-  exports: [InputTableComponent]
+  exports: [
+    InputTableComponent,
+    MonthlyTransactionInputComponent
+  ]
 })
 export class UiModule { }
