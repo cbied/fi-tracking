@@ -1,17 +1,17 @@
-<form class="income">
-  <mat-form-field class="income-width">
+<form class="investment">
+  <mat-form-field class="investment-width">
     <mat-label>Choose a date</mat-label>
     <input matInput [matDatepicker]="picker">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
 
-  <mat-form-field class="income-width">
-      <mat-label>Income Amount</mat-label>
-      <input matInput placeholder="1000">
+  <mat-form-field class="investment-width">
+      <mat-label>Investment Amount</mat-label>
+      <input matInput placeholder="500">
   </mat-form-field>
 
-  <mat-form-field class="income-width"
+  <mat-form-field class="investment-width"
   [style.fontSize]="fontSize.value">
     <mat-label>Description</mat-label>
     <textarea matInput
@@ -21,7 +21,7 @@
               cdkAutosizeMaxRows="2"></textarea>
   </mat-form-field>
 
-  <mat-form-field class="income-width">
+  <mat-form-field class="investment-width">
     <mat-label>Category</mat-label>
     <mat-select #fontSize value="16px" (selectionChange)="triggerResize()">
       <mat-option value="10px">10px</mat-option>

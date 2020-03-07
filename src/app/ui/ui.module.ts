@@ -9,13 +9,15 @@ import { MonthlyTransactionExpenseComponent } from './monthly-transaction-expens
 import { MonthlyTransactionIncomeComponent } from './monthly-transaction-income/monthly-transaction-income.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TextFieldModule } from '@angular/cdk/text-field';
+import { MonthlyTransactionInvestmentComponent } from './monthly-transaction-investment/monthly-transaction-investment.component';
 
 @NgModule({
   declarations: [
     InputTableComponent,
     MonthlyTransactionInputComponent,
     MonthlyTransactionExpenseComponent,
-    MonthlyTransactionIncomeComponent
+    MonthlyTransactionIncomeComponent,
+    MonthlyTransactionInvestmentComponent
   ],
   imports: [
     MatDatepickerModule,

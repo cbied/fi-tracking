@@ -3,11 +3,11 @@ import { Component, NgZone, ViewChild, OnInit } from '@angular/core';
 import { take } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-monthly-transaction-income',
-  templateUrl: './monthly-transaction-income.component.html',
-  styleUrls: ['./monthly-transaction-income.component.scss']
+  selector: 'app-monthly-transaction-investment',
+  templateUrl: './monthly-transaction-investment.component.html',
+  styleUrls: ['./monthly-transaction-investment.component.scss']
 })
-export class MonthlyTransactionIncomeComponent implements OnInit {
+export class MonthlyTransactionInvestmentComponent implements OnInit {
 
   constructor(private ngZone: NgZone) {}
 
@@ -20,6 +20,5 @@ export class MonthlyTransactionIncomeComponent implements OnInit {
   }
 
   ngOnInit() {}
-
 
 }
